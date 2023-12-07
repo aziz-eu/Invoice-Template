@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+p{
+    margin: 0;
+  
+}
+
+
+.invoice{
+  max-width: 850px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+}
+.invoice-header{
+    border: 1px double black;
+    padding-top: 1rem;
+    margin-bottom: 0;
+   
+}
+
+.row.contact-info{
+  margin: .2rem 0;
+}
+.shop-info p{
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+
+.logo{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.logo-en{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #004976;
+}
+.logo-ar{
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
+    color: #004976;
+}
+.row{
+    padding: 0;
+    margin: 1rem 0 ;
+    font-size: .6rem;
+}
+
+.middle-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.invoice-info{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.invoice-no{
+  align-items: start;
+}
+.payment-method{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.5rem;
+}
+
+
+.row.customer-info{
+  border: 1px double black;
+  margin-top: .3rem;
+
+}
+
+.customer-info
+ p{
+    font-size: .8rem;
+    font-weight: bold;
+   
+}
+
+.items-section{
+    min-height: 40vh;
+}
+
+
+/* Tbl  */
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+  }
+  
+  table thead th {
+    color: #ffffff;
+    background: #004976;
+    padding: 10px;
+    border: 1px solid #ebebec;
+    font-weight: 500;
+  }
+  
+  table tr {
+    background: #ffffff;
+  }
+  
+  table tr td {
+    border: 1px solid #e6edf1;
+    padding: 4px;
+    font-size: .8rem;
+  }
+  
+  .row.amount-inword{
+    font-size: .7rem;
+    font-weight: bold;
+
+  }
+  @media only screen and (max-width: 640px) {
+    table thead {
+      display: none;
+    }
+  
+    table tbody {
+      display: block;
+    }
+  
+    table tbody tr td {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+  
+    table tbody tr {
+      margin-bottom: 20px;
+      display: block;
+      border: 1px solid #004976;
+      background: #f9f9f9;
+      overflow: hidden;
+    }
+  
+    table tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      width: 30%;
+      display: flex;
+      background: #004976;
+      color: #fff;
+      padding: 15px;
+      margin-inline-end: 10px;
+    }
+  }
+  .row.signiture{
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
+  @media print {
+    body {-webkit-print-color-adjust: exact;}
+    }
+    @page { size: auto;  margin: 0mm; }
+
+    /* 
+    Goods received in Perfect Condition : */
+
+    /* */
